@@ -27,7 +27,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', ')wnt@!(m%a4(ddh72(8v#prl3g74f0
 DEBUG = 'False'
 
 ALLOWED_HOSTS = [
-    'myonediary.herokuapp.com'
+    'myonediary.herokuapp.com',
+    '127.0.0.1'
 ]
 
 
@@ -43,8 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
     'django.contrib.sites',
     'Mydiary'
    
@@ -119,17 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'SCOPE': [
-            'profile',
-            'email',
-        ],
-        'AUTH_PARAMS': {
-            'access_type': 'online',
-        }
-    }
-}
+
 
 
 # Internationalization
