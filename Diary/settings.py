@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', ')wnt@!(m%a4(ddh72(8v#prl3g74f0
 DEBUG = 'False'
 
 ALLOWED_HOSTS = [
-    'secure-depths-59571.herokuapp.com'
+    'myonediary.herokuapp.com'
 ]
 
 
