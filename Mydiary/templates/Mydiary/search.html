@@ -1,0 +1,31 @@
+{%extends 'Mydiary/base.html'%}
+{% block content%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/newentryjumbo.css' %}">
+
+
+
+
+<div>
+  <p> <h3 <strong class="d-inline-block mb-2 text-success">Top results</strong></h3>
+  </p>
+  {%if entry%}
+  {% for each_entry in entry%}
+	<div class="col-md-6">
+    <div class="viewback">
+		<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+			<div class="col p-4 d-flex flex-column position-static">
+
+				<div class="mb-1 text-dark">{{each_entry.date}}</div>
+				  <h3 <strong class="d-inline-block mb-2 text-primary">{{each_entry.Topic}}</strong></h3>
+				<p class="mb-auto">"{{ each_entry.TodaysEntry|linebreaksbr}}"</p>
+
+
+             </div>
+        </div>
+    </div>
+    </div>
+    {% endfor%}
+    {% endif%}
+</div>
+{%endblock%}

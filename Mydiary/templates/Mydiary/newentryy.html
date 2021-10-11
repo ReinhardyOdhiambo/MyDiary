@@ -1,0 +1,314 @@
+
+
+{% extends 'Mydiary/base.html'%}
+{% block page-title %}New Entery{% endblock %}
+
+
+
+{%block content%}
+{% load static %}
+<!DOCTYPE html>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJle2d978c739550ac42a6969c8b9f1786f"/>
+  <meta charset="utf-8">
+  <meta name="generator" content="Google Web Designer 14.0.1.0920">
+  <style type="text/css" id="gwd-text-style">p {
+    margin: 0px;
+}
+h1 {
+    margin: 0px;
+}
+h2 {
+    margin: 0px;
+}
+h3 {
+    margin: 0px;
+}</style>
+  <style type="text/css">html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+body {
+    background-color: transparent;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1400px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+.gwd-img-17gg {
+    position: absolute;
+    width: 1200px;
+    height: 1600px;
+    left: -505px;
+    top: 118px;
+}
+.gwd-span-k3a3 {
+    display: block;
+    font-family: Georgia;
+    font-size: 25px;
+    height: 38px;
+    left: 75px;
+    position: absolute;
+    top: 25px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    width: 116px;
+}
+.gwd-img-1wf2 {
+    position: absolute;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    width: 43px;
+    height: 35px;
+    left: 14px;
+    top: 25px;
+}
+.gwd-img-vt2r {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 62px;
+    top: 134px;
+}
+.gwd-img-k3d2 {
+    clip-path: ellipse(102px 100px at 100px 90px);
+    -webkit-clip-path: ellipse(102px 100px at 100px 90px);
+}
+.gwd-input-1ha0 {
+    width: 140px;
+    left: 232px;
+    top: 280px;
+}
+.gwd-input-ybq4 {
+    position: absolute;
+    left: 202px;
+    top: 518px;
+    width: 100px;
+    height: 20px;
+}
+.gwd-input-iukn {
+    width: 154px;
+    left: 225px;
+    top: 280px;
+}
+.gwd-div-4zo8 {
+    left: 0px;
+    top: 0px;
+    height: 233px;
+    width: 408px;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+.gwd-img-omrf {
+    position: absolute;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    height: 228px;
+    width: 284px;
+    left: 92px;
+    top: 76px;
+}
+.gwd-div-1epw {
+    position: absolute;
+    left: 270px;
+    top: 128px;
+}
+[data-gwd-group="NewEntryForm"] input[type="text"] {
+    font-size: 25px;
+    border-color: rgb(8, 22, 225);
+    border-image-source: none;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-radius: 10px;
+    overflow: auto;
+    resize: vertical;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-div-138m {
+    position: absolute;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    background-color: rgba(22, 17, 179, 0.19);
+  
+    width: 1380px;
+    border-radius: 30px;
+    border-style: solid;
+    border-image-source: none;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-color: rgba(112, 112, 112, 0.51);
+    box-shadow: grey 10px 5px 5px;
+    height: 824px;
+    border-width: 0px;
+    left: 0px;
+    top: 0px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-div-1esb {
+    position: absolute;
+    height: 60px;
+    width: 464px;
+    border-radius: 10px;
+    background-image: none;
+    border-image-source: none;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-color: rgb(32, 42, 150);
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 4px;
+    left: 889px;
+    top: 22px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-span-p7yz {
+    display: block;
+    font-family: Georgia;
+    font-size: 25px;
+    position: absolute;
+    text-align: justify;
+    width: 76px;
+    height: 36px;
+    transform-origin: 38px 18.2567px 0px;
+    -webkit-transform-origin: 38px 18.2567px 0px;
+    -moz-transform-origin: 38px 18.2567px 0px;
+    left: 24px;
+    top: 13px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-span-1f0x {
+    position: absolute;
+    font-family: Georgia;
+    font-size: 25px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    text-align: justify;
+    font-weight: normal;
+    height: 37px;
+    top: 12px;
+    width: 278px;
+    left: 151px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-input-9stn {
+    position: absolute;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    left: 21px;
+    width: 464px;
+    height: 62px;
+    border-image-source: none;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-color: rgb(48, 50, 139);
+    border-width: 4px;
+    border-radius: 10px;
+    top: 103px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-span-rvgm {
+    position: absolute;
+    left: 21px;
+    width: 236px;
+    height: 46.6667px;
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    top: 56px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-span-1s74 {
+    position: absolute;
+    width: 236px;
+    font-family: Georgia;
+    height: 47px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    left: 23px;
+    top: 193px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-textarea-giwk {
+    position: absolute;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    height: 420px;
+    max-height: 430px;
+    width: 1133px;
+    max-width: 1140px;
+    font-size: 25px;
+    font-family: Georgia;
+    border-radius: 15px;
+    border-image-source: none;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-color: rgb(27, 39, 154);
+    left: 23px;
+    top: 240px;
+}
+[data-gwd-group="NewEntryForm"] .gwd-grp-1qaf.gwd-button-1w8g {
+    position: absolute;
+    left: 64px;
+    top: 748px;
+    width: 193px;
+    height: 47px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    background-image: none;
+    background-color: rgb(33, 42, 149);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Georgia;
+    border-radius: 10px;
+    border-width: 0px;
+}
+[data-gwd-group="NewEntryForm"] {
+    width: 1380px;
+    height: 824px;
+}</style>
+  <link href="https://fonts.googleapis.com/css?family=Lora:regular" rel="stylesheet" type="text/css">
+  
+  <script type="text/javascript" gwd-events="handlers">
+    window.gwd = window.gwd || {};
+    gwd.prfle = function(event) {
+      var image = document.getElementById("output");
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+</head>
+
+
+<body class="htmlNoPages">
+  
+  <div data-gwd-group="NewEntryForm" class="gwd-div-1epw">
+      <div class="gwd-div-138m gwd-grp-1qaf" data-gwd-grp-id="NewentryForm">
+        <div class="gwd-div-1esb gwd-grp-1qaf" data-gwd-grp-id="DateTab"><span class="gwd-span-p7yz gwd-grp-1qaf">&nbsp;Date :</span><span class="gwd-span-1f0x gwd-grp-1qaf">&nbsp; &nbsp; {% now "jS \o\f F" %}</span></div>
+        <form action="" method="POST" class="gwd-grp-1qaf">{% csrf_token %}
+          <input type="text" class="gwd-input-9stn gwd-grp-1qaf" name="Topic" placeholder="Topic" data-gwd-grp-id="Topictext_2" required="">
+          <span class="gwd-span-rvgm gwd-grp-1qaf">Todays Topic</span><span class="gwd-span-1s74 gwd-grp-1qaf">Todays Entry</span>
+          <textarea class="gwd-textarea-giwk gwd-grp-1qaf" placeholder="Entry" name="TodaysEntry" required=""></textarea>
+          <button class="gwd-button-1w8g gwd-grp-1qaf" data-gwd-name="Save" type="submit" data-gwd-grp-id="button_2">Save Entry</button>
+        </form>
+      </div>
+    </div>
+
+
+</body></html>
+{%endblock%}
