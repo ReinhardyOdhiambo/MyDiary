@@ -119,7 +119,93 @@ body {
     font-family: Georgia;
     font-size: 25px;
 }
-.gwd-div-1iw1 {
+.gwd-img-17gg {
+    position: absolute;
+    width: 1200px;
+    height: 1600px;
+    left: -505px;
+    top: 118px;
+}
+.gwd-span-k3a3 {
+    display: block;
+    font-family: Georgia;
+    font-size: 25px;
+    height: 38px;
+    left: 75px;
+    position: absolute;
+    top: 25px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    width: 116px;
+}
+.gwd-img-1wf2 {
+    position: absolute;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    width: 43px;
+    height: 35px;
+    left: 14px;
+    top: 25px;
+}
+.gwd-img-vt2r {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 62px;
+    top: 134px;
+}
+.gwd-img-k3d2 {
+    clip-path: ellipse(102px 100px at 100px 90px);
+    -webkit-clip-path: ellipse(102px 100px at 100px 90px);
+}
+.gwd-input-1ha0 {
+    width: 140px;
+    left: 232px;
+    top: 280px;
+}
+.gwd-input-ybq4 {
+    position: absolute;
+    left: 202px;
+    top: 518px;
+    width: 100px;
+    height: 20px;
+}
+.gwd-input-iukn {
+    width: 154px;
+    left: 225px;
+    top: 280px;
+}
+.gwd-div-4zo8 {
+    left: 0px;
+    top: 0px;
+    height: 233px;
+    width: 408px;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+.gwd-img-omrf {
+    position: absolute;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    height: 228px;
+    width: 284px;
+    left: 92px;
+    top: 76px;
+}
+.gwd-br-1uj7 {
+    font-family: Georgia;
+    font-size: 25px;
+    text-align: start;
+}
+.gwd-br-on8n {
+    font-family: Georgia;
+    font-size: 25px;
+}
+.gwd-div-d4r3 {
     background-color: rgba(22, 17, 179, 0.19);
     border-radius: 30px;
     box-shadow: rgb(128, 128, 128) 10px 15px 5px 0px;
@@ -129,9 +215,64 @@ body {
     -moz-transform-origin: 50% 50% 0px;
     width: 1000px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom:50px ;
+    margin-top: 30px;
     left: 50px;
-    top: 642px;
+    top: 132px;
+}
+.gwd-line-x82i {
+    display: block;
+    height: 2px;
+    left: 0px;
+    position: absolute;
+    stroke: rgb(0, 0, 0);
+    top: 109px;
+    width: 1000px;
+}
+.gwd-p-1rx6 {
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: 700;
+    height: 44px;
+    top: 42px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    width: 586px;
+    position: relative;
+    left: 25px;
+}
+.gwd-p-o05y {
+    font-size: 25px;
+    height: 420px;
+    left: 25px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    width: 950px;
+    position: relative;
+    top: 90px;
+}
+.gwd-p-1fay {
+    font-family: Georgia;
+    font-size: 25px;
+    height: 46px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    width: 283px;
+    position: relative;
+    left: 717px;
+    top: 99px;
+}
+.gwd-span-j9r0 {
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 20px;
+}
+.gwd-br-1mnk {
+    font-family: Georgia;
+    font-size: 25px;
 }
 .gwd-svg-1vp7 {
     display: block;
@@ -385,25 +526,14 @@ body {
 {% if request.session.current_user %}
 <body class="htmlNoPages">
     
-  {% for entry in entries %}
-  <div class="gwd-div-2872 gwd-div-1iw1" id="EntryShow_2">
-    <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 1000 2" class="gwd-svg-1vp7">
-      <line x1="0" x2="1000" y1="0.5" y2="1.5" class=""></line>
-    </svg>
-    
-    <p class="gwd-p-1gss" id="entryhead_2">{{ entry.Topic}}</p>
-    <p class="gwd-p-19cx" id="entrybody_2">{{ entry.TodaysEntry|linebreaksbr}}</p>
-    <p class="gwd-p-g45z gwd-p-1ntr" id="entrydate_2"><span class="gwd-span-1jd9">{{entry.date}}</span><br>
-        {% endfor %}
-       
-      
+ 
     </p>
   </div>
  
 <div data-gwd-group="ProfileTag" class="gwd-div-12jz">
       <div class="gwd-div-1wdo gwd-grp-pkpk" data-gwd-grp-id="ProfileCanvas">
         <div class="gwd-div-1085 gwd-grp-pkpk" data-gwd-grp-id="profileimage">
-          <img src="{% static "images/profile.png"%}"  class="gwd-img-6zu4 gwd-grp-pkpk gwd-img-1r8n">
+          <img src="{% static "images/WhatsApp_Image_2021-08-29_at_16.38.59__1_.jpeg"%}"  class="gwd-img-6zu4 gwd-grp-pkpk gwd-img-1r8n">
         </div>
        
         <div class="gwd-div-12ik gwd-grp-pkpk" data-gwd-grp-id="profilenamebio">
@@ -438,6 +568,19 @@ body {
         {% endfor %}
       </div>
     </div>
+    {% for entry in entries %}
+  <div class="gwd-div-d4r3 gwd-div-2872" id="EntryShow_1">
+    <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 1000 2" class="gwd-line-x82i">
+      <line x1="0" x2="1000" y1="0.5" y2="1.5" class=""></line>
+    </svg>
+    <p class="gwd-p-1rx6" id="entryhead_1">{{ entry.Topic}}</p>
+    <p class="gwd-p-o05y" id="entrybody_1">{{ entry.TodaysEntry|linebreaksbr}}</p>
+    <p class="gwd-p-1fay gwd-p-g45z" id="entrydate_1"><span class="gwd-span-j9r0">{{entry.date}}</span><br>
+      
+    </p>
+  </div>
+  {% endfor %}
+      
     
    
 
