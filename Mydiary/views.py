@@ -75,7 +75,7 @@ def home(request):
 	entries =NewEntry.objects.filter(date__lte=timezone.now()).order_by('-date')
 	return render(request, 'Mydiary/home.html', {'entries':entries}) 
 
-@login_required
+
 def settings(request):
 	if request.method == "POST" :
 		bio = request.POST['bio']
@@ -90,7 +90,7 @@ def settings(request):
 
 	return render(request, 'Mydiary/settings.html', {}) 
 
-@login_required
+
 def profile(request):
 	current_user = request.session['user_name']
 	biolinks = [Socials.objects.filter(username = current_user,date__lte=timezone.now()).last()]
@@ -103,7 +103,7 @@ def profile(request):
 	 }
 	return render(request, 'Mydiary/profile.html', context)			
 	
-@login_required
+
 def search(request):
 	if request.method == 'GET':
 		query = request.GET.get('q')
@@ -112,7 +112,7 @@ def search(request):
 	else:
 		return render(request,'Mydiary/search.html',{})
 
-@login_required
+
 def newentry(request):
 	if request.method == "POST" :
 		Topic = request.POST['Topic']
@@ -126,13 +126,13 @@ def newentry(request):
 	else:
 			return render(request, 'Mydiary/newentry.html')
 
-@login_required
+
 def viewentry(request):
 	current_user = request.session['user_name']
 	entries =NewEntry.objects.filter(username = current_user,date__lte=timezone.now()).order_by('-date')
 	return render(request, 'Mydiary/viewentry.html', {'entries':entries})
 
 
-@login_required
+
 def landing(request):
 	return render(request, 'Mydiary/landing.html', {})
